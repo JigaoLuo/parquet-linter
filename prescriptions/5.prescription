@@ -1,0 +1,14 @@
+set column _id statistics page
+set column companyName statistics page
+set column companyUrl statistics page
+set column published_at statistics page
+set column url statistics page
+set column title statistics page
+set column main_image statistics page
+set column description statistics page
+set column embedding.list.element statistics page
+set file data_page_size_limit 262144
+set column url dictionary_page_size_limit 2097152
+set column description dictionary_page_size_limit 2097152
+set column embedding.list.element dictionary_page_size_limit 4194304
+set column embedding.list.element compression lz4_raw

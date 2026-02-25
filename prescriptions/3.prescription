@@ -1,0 +1,11 @@
+set column task_id compression uncompressed
+set column domain compression uncompressed
+set column score compression uncompressed
+set column num_steps compression uncompressed
+set column screenshots.list.element.bytes compression uncompressed
+set column exe_statuses.list.element compression uncompressed
+set column rewards.list.element compression uncompressed
+set column dones.list.element compression uncompressed
+set column screenshots.list.element.bytes statistics page
+set column screenshots.list.element.bytes dictionary_page_size_limit 16777216
+set file statistics_truncate_length 64

@@ -1,0 +1,14 @@
+set column developer_company compression uncompressed
+set column file_path statistics page
+set column file_language statistics page
+set column content statistics page
+set column repo_name statistics page
+set column repo_stars statistics page
+set column repo_description statistics page
+set column repo_primary_language statistics page
+set column developer_username statistics page
+set column developer_name statistics page
+set column developer_company statistics page
+set column file_path dictionary_page_size_limit 4194304
+set column content dictionary_page_size_limit 16777216
+set column content compression lz4_raw

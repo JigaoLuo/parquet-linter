@@ -1,0 +1,16 @@
+set column qwen3-4b-thinking-reward@128 encoding byte_stream_split
+set column reasoning_content dictionary false
+set column reasoning_content encoding delta_length_byte_array
+set column messages.list.element.content dictionary false
+set column messages.list.element.content encoding delta_length_byte_array
+set column proof compression zstd(3)
+set column source compression uncompressed
+set column reasoning_content statistics page
+set column proof statistics page
+set column messages.list.element.content statistics page
+set column reasoning_content dictionary_page_size_limit 16777216
+set column proof dictionary false
+set column messages.list.element.content dictionary_page_size_limit 8388608
+set column reasoning_content compression lz4_raw
+set column messages.list.element.content compression lz4_raw
+set file statistics_truncate_length 64

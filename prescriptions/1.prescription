@@ -1,0 +1,17 @@
+set column latency_s encoding byte_stream_split
+set column messages.list.element.content.list.element.text dictionary false
+set column messages.list.element.content.list.element.text encoding delta_length_byte_array
+set column messages.list.element.content.list.element.text dictionary_page_size_limit 8388608
+set column messages.list.element.content.list.element.text compression lz4_raw
+set column error compression uncompressed
+set column attempts compression uncompressed
+set column status compression uncompressed
+set column num_chunks compression uncompressed
+set column messages.list.element.content.list.element.channel_config.channel_required compression uncompressed
+set column messages.list.element.content.list.element.channel_config.valid_channels.list.element compression uncompressed
+set column messages.list.element.content.list.element.conversation_start_date compression uncompressed
+set column messages.list.element.content.list.element.knowledge_cutoff compression uncompressed
+set column messages.list.element.content.list.element.model_identity compression uncompressed
+set column messages.list.element.content.list.element.reasoning_effort compression uncompressed
+set column messages.list.element.content_type compression uncompressed
+set column messages.list.element.name compression uncompressed
